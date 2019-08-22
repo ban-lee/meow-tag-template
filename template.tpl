@@ -32,9 +32,40 @@ ___TEMPLATE_PARAMETERS___
     "canBeEmptyString": false
   },
   {
-    "type": "CHECKBOX",
-    "name": "checkbox1",
-    "checkboxText": "Should meow?",
+    "type": "SELECT",
+    "name": "dropDownMenu1",
+    "displayName": "Breed",
+    "macrosInSelect": false,
+    "selectItems": [
+      {
+        "value": 1,
+        "displayValue": "Domestic Shorthair"
+      },
+      {
+        "value": 2,
+        "displayValue": "Ragdoll"
+      },
+      {
+        "value": 3,
+        "displayValue": "Siamese"
+      }
+    ],
+    "simpleValueType": true
+  },
+  {
+    "type": "RADIO",
+    "name": "radioButtonGroup1",
+    "displayName": "Intelligence",
+    "radioItems": [
+      {
+        "value": 1,
+        "displayValue": "Smart"
+      },
+      {
+        "value": 2,
+        "displayValue": "Dumb"
+      }
+    ],
     "simpleValueType": true
   }
 ]
@@ -463,6 +494,16 @@ ___WEB_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "inject_script",
+        "versionId": "1"
+      },
+      "param": []
+    },
+    "isRequired": true
   }
 ]
 
@@ -475,6 +516,7 @@ const query = require('queryPermission');
 const createQueue = require('createQueue');
 const getUrl = require('getUrl');
 const iframe = require('injectHiddenIframe');
+const injectScript = require('injectScript');
 const log = require('logToConsole');
 const copyDL = require('copyFromDataLayer');
 const readCharacterSet = require('readCharacterSet');
@@ -486,10 +528,12 @@ if (query('access_globals', 'readwrite', 'dataLayer')) {
   const dataLayerPush = createQueue('dataLayer');
 }
 
+log('Test comment');
+
 // Call data.gtmOnSuccess when the tag is finished.
 data.gtmOnSuccess();
 
 
 ___NOTES___
 
-Created on 8/6/2019, 2:27:30 PM
+Created on 8/22/2019, 4:54:44 PM
