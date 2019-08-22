@@ -1,3 +1,8 @@
 versions:
+  - 
+    sha: 04c099a66dc3bd2e1edcd191a98d138b4b071964
+    changeNotes: |
+      Re-add the inject script permissions.
+      Also add more cat fields.
   - sha: 7da2b0848e04f9e5fa971de03d72d70c1fef6b75
   - sha: 067a9902d9a7ab4cb590d18c740910ddff114a78
