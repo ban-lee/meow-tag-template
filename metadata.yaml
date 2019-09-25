@@ -1,5 +1,8 @@
 versions:
   - 
+    sha: 817b46620088626b3e472fc8b93498f9eaea139d
+    changeNotes: Added TOS to tpl.
+  - 
     sha: 04c099a66dc3bd2e1edcd191a98d138b4b071964
     changeNotes: |
       Re-add the inject script permissions.
