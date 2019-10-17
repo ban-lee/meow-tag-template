@@ -1,4 +1,6 @@
 versions:
+  - sha: e0c4fb365674252610f877b5c234dc72d54e993a
+    changeNotes: Added template tests.
   - 
     sha: 817b46620088626b3e472fc8b93498f9eaea139d
     changeNotes: Added TOS to tpl.
