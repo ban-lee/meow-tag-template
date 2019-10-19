@@ -573,27 +573,6 @@ ___WEB_PERMISSIONS___
 ]
 
 
-___TESTS___
-
-scenarios:
-- name: Test1
-  code: |-
-    // Call runCode to run the template's code.
-    runCode();
-
-    // Assert that the template code finished successfully.
-    assertApi('gtmOnSuccess').wasCalled();
-- name: Test2
-  code: |-
-    // Call runCode to run the template's code.
-    runCode();
-
-    // Assert that the template code finished successfully.
-    assertApi('gtmOnSuccess').wasCalled();
-
-
 ___NOTES___
 
 Created on 10/17/2019, 11:43:53 AM
-
-
