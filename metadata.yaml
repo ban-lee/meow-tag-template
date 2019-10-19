@@ -1,4 +1,8 @@
 versions:
+  - sha: 328e3ba605a2ca893d3f660e52a11c19416a414a
+    changeNotes: |
+      Removed template tests.
+      Removed extra spaces at end of file.
   - sha: e0c4fb365674252610f877b5c234dc72d54e993a
     changeNotes: Added template tests.
   - 
