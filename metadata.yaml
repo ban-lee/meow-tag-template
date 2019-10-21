@@ -1,4 +1,5 @@
 versions:
+  - sha: e04ff6ed531e630a41705aaf60ab1407c5617b4d
   - sha: 328e3ba605a2ca893d3f660e52a11c19416a414a
     changeNotes: |
       Removed template tests.
