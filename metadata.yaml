@@ -1,4 +1,6 @@
 versions:
+  - sha: 855ab6050e0bc15011a8987d03668de1b20f498f
+    changeNotes: Meow. Tests are back!
   - sha: e04ff6ed531e630a41705aaf60ab1407c5617b4d
   - sha: 328e3ba605a2ca893d3f660e52a11c19416a414a
     changeNotes: |
